@@ -1,0 +1,8 @@
+prefix=/home/ruziniu/Projects/ME5413/Homework1_Perception/Bonus Task/bonus_task_ws/devel
+
+Name: track_node
+Description: Description of track_node
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

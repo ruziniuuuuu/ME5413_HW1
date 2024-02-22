@@ -1,0 +1,16 @@
+<launch>
+    <node 
+        pkg="track_node"
+        type="track_sub_p.py"
+        name="track_sub_p"
+        output="screen"
+        cwd="node"
+    />
+    <node 
+        pkg="track_node"
+        type="track_pub_p.py"
+        name="track_pub_p"
+        output="screen"
+        cwd="node"
+    />
+</launch>

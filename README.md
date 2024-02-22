@@ -89,6 +89,12 @@ cd into the `bonus_task_ws` and run the following commands:
 ```
 which is a shell script that will catkin_make the workspace, and roslaunch the publisher and subscriber nodes.
 
+The exported bag file is in the `track_node` folder, and the bag file is named `track.bag`. You can play the bag file by running the following command:
+
+```bash
+rosbag play ./src/track_node/track.bag
+```
+
 # TODO list
 - [x] Finish the Task 1
 - [x] Finish the Task 2

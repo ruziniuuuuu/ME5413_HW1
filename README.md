@@ -1,6 +1,8 @@
 # ME5413 - Homework 1: Perception
 > **Author: Cao Chenyu**
 
+(I have removed all the data files on the remote branch, but only reserved the implementations and the report.)
+
 # Introduction
 This is the repository for the homework 1 of the course ME5413: Perception. The homework is divided into three tasks:
 - Task 1: Single Object Detection

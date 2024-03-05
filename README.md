@@ -16,6 +16,7 @@ Homework1_Perception
 ├─ README.md
 ├─ Task 1
 │  ├─ task1.ipynb
+│  ├─ data
 │  └─ utils
 │     ├─ __init__.py
 │     ├─ evaluate.py
@@ -23,6 +24,7 @@ Homework1_Perception
 │     └─ save.py
 ├─ Task 2
 │  ├─ task2.ipynb
+│  ├─ data
 │  ├─ utils
 │  │  ├─ __init__.py
 │  │  └─ plot.py
@@ -89,7 +91,7 @@ cd into the `bonus_task_ws` and run the following commands:
 ```bash
 ./run.sh
 ```
-which is a shell script that will catkin_make the workspace, and roslaunch the publisher and subscriber nodes.
+which is a shell script that will `catkin_make` the workspace, and `roslaunch` the publisher and subscriber nodes.
 
 The exported bag file is in the `track_node` folder, and the bag file is named `track.bag`. You can play the bag file by running the following command:
 

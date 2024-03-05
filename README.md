@@ -105,23 +105,23 @@ rosbag play ./src/track_node/track.bag
 - [x] Finish the Bonus Task
 
 ## Task 1: Single Object Detection
-- [x] Using template matching method to track the object 
-- [x] Using Kalman Filtering (based on template matching measurements) to track the object
+- [x] Use template matching method to track the object 
+- [x] Use Kalman Filtering (based on template matching measurements) to track the object
 - [x] Improve the performance of template matching by selecting the best templete based on the different dataset.
 - [x] Tune the search region of template matching to improve the performance of tracking
 - [x] Tune the parameters of Kalman Filtering to improve the performance of tracking, in order that using Kalman Filter would get a better performance than using only template matching.
 - [ ] Adjust the width and height of the template to improve the performance of tracking 
 
 ## Task 2: Multiple Object Detection 
-- [x] Using constant velocity model and calculate the ADE and FDE
-- [x] Using constant acceleration model and calculate the ADE and FDE
-- [x] Using CTRV model and calculate the ADE and FDE
+- [x] Use constant velocity model and calculate the ADE and FDE
+- [x] Use constant acceleration model and calculate the ADE and FDE
+- [x] Use CTRV model and calculate the ADE and FDE
 - [x] Compare the performance of different models
 - [x] Visualize the dynamic process of the object detection
 - [ ] Compare the performance when using the average velocity (and acceleration) of the last 1 second frames (Because by default I use the current frame's velocity and acceleration)
 
 ## Bonus Task
-- [x] Read from the bag file
+- [x] Read from the bag files
 - [x] Deploy the Kalman Filter Algorithm Successfully
 - [x] Topic Message Publishing and Subscribing
 - [x] Rosbag Recording (and Playback)

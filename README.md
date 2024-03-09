@@ -12,7 +12,6 @@ This is the repository for the homework 1 of the course ME5413: Perception. The 
 # Project Structure
 ```
 Homework1_Perception
-├─ .gitignore
 ├─ README.md
 ├─ Task 1
 │  ├─ task1.ipynb
@@ -28,12 +27,8 @@ Homework1_Perception
 │  ├─ utils
 │  │  ├─ __init__.py
 │  │  └─ plot.py
-│  └─ viz.png
 ├─ Bonus Task
 │  ├─ bonus_task_ws
-│     ├─ .catkin_workspace
-│     ├─ .vscode
-│     │  └─ settings.json
 │     ├─ build
 │     ├─ devel
 │     │  ├─ lib
@@ -48,8 +43,6 @@ Homework1_Perception
 │     │     │  ├─ seq_1
 │     │     │  └─ seq_2
 │     │     ├─ CMakeLists.txt
-│     │     ├─ include
-│     │     │  └─ track_node
 │     │     ├─ launch
 │     │     │  └─ track.launch
 │     │     ├─ package.xml
@@ -59,7 +52,7 @@ Homework1_Perception
 │     │     ├─ src
 │     │     └─ track.bag
 ├─ requirements.txt
-└─ ME5413_HW1_Perception.pdf
+└─ ME5413_HW1_Report.pdf
 ```
 
 # Usage

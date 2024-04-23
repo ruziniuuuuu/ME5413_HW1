@@ -33,22 +33,16 @@ Homework1_Perception
 │  │  └─ plot.py
 ├─ Bonus Task
 │  ├─ bonus_task_ws -> ROS workspsace for bonus task
-│     ├─ run.sh
+│     ├─ run.sh -> shell script for running the ROS nodes
 │     ├─ src
-│     │  ├─ CMakeLists.txt
-│     │  └─ track_node
-│     │     ├─ data -> date files (removed)
-│     │     │  ├─ seq_1
-│     │     │  └─ seq_2
-│     │     ├─ CMakeLists.txt
+│     │  └─ track_node -> node for publishing KF tracking results and subscribing the object detection results
+│     │     ├─ data
 │     │     ├─ launch
 │     │     │  └─ track.launch
-│     │     ├─ package.xml
 │     │     ├─ scripts
 │     │     │  ├─ track_pub_p.py
 │     │     │  └─ track_sub_p.py
-│     │     ├─ src
-│     │     └─ track.bag -> bdg file (removed)
+│     │     └─ track.bag -> bag file
 ├─ requirements.txt
 └─ ME5413_HW1_Report.pdf
 ```
@@ -104,7 +98,7 @@ rosbag play ./src/track_node/track.bag
 - [x] Improve the performance of template matching by selecting the best templete based on the different dataset.
 - [x] Tune the search region of template matching to improve the performance of tracking
 - [x] Tune the parameters of Kalman Filtering to improve the performance of tracking, in order that using Kalman Filter would get a better performance than using only template matching.
-- [ ] Adjust the width and height of the template to improve the performance of tracking 
+- [ ] Adjust the width and height of the template to improve the performance of tracking.
 
 ### Task 2
 

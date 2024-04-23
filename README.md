@@ -1,16 +1,20 @@
 # ME5413 - Homework 1: Perception
+
 > **Author: Cao Chenyu**
 
 (I have removed all the data files on the remote branch, but only reserved the implementations and the report.)
 
-# Introduction
+## Introduction
+
 This is the repository for the homework 1 of the course ME5413: Perception. The homework is divided into three tasks:
+
 - Task 1: Single Object Detection
 - Task 2: Multiple Object Detection
 - Bonus Task: Publish and Subscribe Object Detection Results
 
-# Project Structure
-```
+## Project Structure
+
+``` plaintxt
 Homework1_Perception
 ├─ README.md
 ├─ Task 1
@@ -28,18 +32,12 @@ Homework1_Perception
 │  │  ├─ __init__.py
 │  │  └─ plot.py
 ├─ Bonus Task
-│  ├─ bonus_task_ws
-│     ├─ build
-│     ├─ devel
-│     │  ├─ lib
-│     │  ├─ setup.bash
-│     │  ├─ setup.sh
-│     │  ├─ setup.zsh
+│  ├─ bonus_task_ws -> ROS workspsace for bonus task
 │     ├─ run.sh
 │     ├─ src
 │     │  ├─ CMakeLists.txt
 │     │  └─ track_node
-│     │     ├─ data
+│     │     ├─ data -> date files (removed)
 │     │     │  ├─ seq_1
 │     │     │  └─ seq_2
 │     │     ├─ CMakeLists.txt
@@ -50,14 +48,14 @@ Homework1_Perception
 │     │     │  ├─ track_pub_p.py
 │     │     │  └─ track_sub_p.py
 │     │     ├─ src
-│     │     └─ track.bag
+│     │     └─ track.bag -> bdg file (removed)
 ├─ requirements.txt
 └─ ME5413_HW1_Report.pdf
 ```
 
-# Usage
+## Usage
 
-## Pre-requisites
+### Pre-requisites
 
 You need to create a virtual environment and install the required packages. You can do this by running the following commands:
 
@@ -69,21 +67,22 @@ pip install -r requirements.txt
 
 You have to install `ROS 1 Noetic` on `Ubuntu 20` in order to run the Bonus Task. You can install ROS 1 Noetic by following the instructions in the [official website](http://wiki.ros.org/noetic/Installation/Ubuntu).
 
-## Task 1: Single Object Detection
+### Task 1: Single Object Detection
 
 Select the prepared virtual environment, then click `Run All` in the `task1.ipynb` to run the code. The code will load the dataset, perform the template matching and Kalman Filtering, and visualize all the results.
 
-## Task 2: Multiple Object Detection
+### Task 2: Multiple Object Detection
 
 Select the prepared virtual environment, then click `Run All` in the `task2.ipynb` to run the code. The code will load the dataset, perform the object detection using different models, calculate the ADE and FDE, and visualize the results.
 
-## Bonus Task
+### Bonus Task
 
 cd into the `bonus_task_ws` and run the following commands:
 
 ```bash
 ./run.sh
 ```
+
 which is a shell script that will `catkin_make` the workspace, and `roslaunch` the publisher and subscriber nodes.
 
 The exported bag file is in the `track_node` folder, and the bag file is named `track.bag`. You can play the bag file by running the following command:
@@ -92,20 +91,23 @@ The exported bag file is in the `track_node` folder, and the bag file is named `
 rosbag play ./src/track_node/track.bag
 ```
 
-# TODO list
+## TODO list
+
 - [x] Finish the Task 1
 - [x] Finish the Task 2
 - [x] Finish the Bonus Task
 
-## Task 1: Single Object Detection
-- [x] Use template matching method to track the object 
+### Task 1
+
+- [x] Use template matching method to track the object
 - [x] Use Kalman Filtering (based on template matching measurements) to track the object
 - [x] Improve the performance of template matching by selecting the best templete based on the different dataset.
 - [x] Tune the search region of template matching to improve the performance of tracking
 - [x] Tune the parameters of Kalman Filtering to improve the performance of tracking, in order that using Kalman Filter would get a better performance than using only template matching.
 - [ ] Adjust the width and height of the template to improve the performance of tracking 
 
-## Task 2: Multiple Object Detection 
+### Task 2
+
 - [x] Use constant velocity model and calculate the ADE and FDE
 - [x] Use constant acceleration model and calculate the ADE and FDE
 - [x] Use CTRV model and calculate the ADE and FDE
@@ -113,7 +115,8 @@ rosbag play ./src/track_node/track.bag
 - [x] Visualize the dynamic process of the object detection
 - [ ] Compare the performance when using the average velocity (and acceleration) of the last 1 second frames (Because by default I use the current frame's velocity and acceleration)
 
-## Bonus Task
+### Bonus
+
 - [x] Read from the bag files
 - [x] Deploy the Kalman Filter Algorithm Successfully
 - [x] Topic Message Publishing and Subscribing

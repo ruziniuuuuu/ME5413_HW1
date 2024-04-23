@@ -1,2 +1,0 @@
-track_node
--DCATKIN_DEVEL_PREFIX=/home/ruziniu/Projects/ME5413/Homework1_Perception/Bonus Task/bonus_task_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ruziniu/Projects/ME5413/Homework1_Perception/Bonus Task/bonus_task_ws/install -G Unix Makefiles
